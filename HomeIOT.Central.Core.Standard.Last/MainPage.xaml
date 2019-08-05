@@ -11,12 +11,27 @@
     <Grid>
         <TextBlock x:Name="textBox" HorizontalAlignment="Left" Margin="144,133,0,0" Text="Sensor de Luz" VerticalAlignment="Top" Width="129"/>
         <TextBlock x:Name="txtSensorLuz" HorizontalAlignment="Left" Margin="319,133,0,0"  VerticalAlignment="Top" Width="71"/>
-        <TextBlock x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="137,277,0,0" Text="Led Rojo" VerticalAlignment="Top" Width="129"/>
+        <TextBlock x:Name="textBox_Copy" HorizontalAlignment="Left" Margin="137,277,0,0" Text="Luz" VerticalAlignment="Top" Width="129"/>
         <TextBlock x:Name="txtLedRojo" HorizontalAlignment="Left" Margin="312,277,0,0"  VerticalAlignment="Top" Width="71"/>
         <TextBlock x:Name="textBox_Copy1" HorizontalAlignment="Left" Margin="144,165,0,0" Text="Humedad :" VerticalAlignment="Top" Width="129"/>
         <TextBlock x:Name="txtHumedad" HorizontalAlignment="Left" Margin="319,165,0,0"  VerticalAlignment="Top" Width="71"/>
         <TextBlock x:Name="textBox_Copy2" HorizontalAlignment="Left" Margin="144,196,0,0" Text="Temperatura : " VerticalAlignment="Top" Width="129"/>
         <TextBlock x:Name="txtTemperatura" HorizontalAlignment="Left" Margin="319,196,0,0"  VerticalAlignment="Top" Width="71"/>
+        <Grid>
+            <TextBlock x:Name="textBox1" HorizontalAlignment="Left" Margin="144,133,0,0" Text="Sensor de Luz" VerticalAlignment="Top" Width="129"/>
+            <TextBlock x:Name="txtSensorLuz1" HorizontalAlignment="Left" Margin="319,133,0,0"  VerticalAlignment="Top" Width="71"/>
+            <TextBlock x:Name="textBox_Copy3" HorizontalAlignment="Left" Margin="136,311,0,0" Text="Bomba agua" VerticalAlignment="Top" Width="129" />
+            <TextBlock x:Name="txtBomba" HorizontalAlignment="Left" Margin="319,315,0,0"  VerticalAlignment="Top" Width="71"/>
+            <TextBlock x:Name="textBox_Copy4" HorizontalAlignment="Left" Margin="144,165,0,0" Text="Humedad :" VerticalAlignment="Top" Width="129"/>
+            <TextBlock x:Name="txtHumedad1" HorizontalAlignment="Left" Margin="319,165,0,0"  VerticalAlignment="Top" Width="71"/>
+            <TextBlock x:Name="textBox_Copy5" HorizontalAlignment="Left" Margin="144,196,0,0" Text="Temperatura : " VerticalAlignment="Top" Width="129"/>
+            <TextBlock x:Name="txtTemperatura1" HorizontalAlignment="Left" Margin="319,196,0,0"  VerticalAlignment="Top" Width="71"/>
+            <TextBlock x:Name="textBox_Copy6" HorizontalAlignment="Left" Margin="136,345,0,0" Text="Ventilador" VerticalAlignment="Top" Width="129" />
+            <TextBlock x:Name="txtVentilador" HorizontalAlignment="Left" Margin="319,349,0,0"  VerticalAlignment="Top" Width="71"/>
+            <TextBlock x:Name="textBox_Copy7" HorizontalAlignment="Left" Margin="136,383,0,0" Text="Alarma" VerticalAlignment="Top" Width="129" />
+            <TextBlock x:Name="txtAlarma" HorizontalAlignment="Left" Margin="319,387,0,0"  VerticalAlignment="Top" Width="71"/>
+
+        </Grid>
 
     </Grid>
 </Page>

@@ -270,15 +270,24 @@ namespace HomeIOT.Central.Core.Standard.Last
                     {
                         Task.Run(() => this._arduinosManager.ArduinoMega2560.WriteCommand("W", PIN_BUZZER, "1")).Wait();
                         Task.Run(() => this._arduinosManager.ArduinoMega2560.WriteCommand("W", PIN_VENTILADOR, "0")).Wait();
+                        txtVentilador.Text = "Apagado";
+                        txtAlarma.Text = "Apagado";
                     }
                     else
                     {
                         if (temperature > LIMIT_TEMPERATURE_BUZZER)
+                        {
+                            txtAlarma.Text = "Prendido";
                             Task.Run(() => this._arduinosManager.ArduinoMega2560.WriteCommand("W", PIN_BUZZER, "0")).Wait();
+                        }
                         else
+                        {
+                            txtAlarma.Text = "Apagado";
                             Task.Run(() => this._arduinosManager.ArduinoMega2560.WriteCommand("W", PIN_BUZZER, "1")).Wait();
-
+                        }
                         Task.Run(() => this._arduinosManager.ArduinoMega2560.WriteCommand("W", PIN_VENTILADOR, "1")).Wait();
+                        txtVentilador.Text = "Prendido";
+
 
                     }
                     txtTemperatura.Text = temperature.ToString();
@@ -404,10 +413,13 @@ namespace HomeIOT.Central.Core.Standard.Last
                 if (int.Parse(dataRead.Value) < LIMITE_HUMEDAD_SUELO)
                 {
                     await this._arduinosManager.ArduinoMega2560.WriteCommand("W", PIN_AGUA, "0");
+                    txtBomba.Text = "Apagado";
                 }
                 else
                 {
                     await this._arduinosManager.ArduinoMega2560.WriteCommand("W", PIN_AGUA, "1");
+                    txtBomba.Text = "Prendido";
+
                 }
             }
             else if (dataRead.Pin == "A1")
